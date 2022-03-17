@@ -2,7 +2,6 @@
 
 $errors = array('email'=>'', 'title'=>'' , 'ingridients'=>'');
 
-
 if(isset($_GET['submit'])){
 //checking the inputs
     if(empty($_GET['email'])){
@@ -13,7 +12,7 @@ if(isset($_GET['submit'])){
                $errors['email'] ='must be a valid email address';
         }
     }
-
+    
     if(empty($_GET['title'])){
         $errors['title'] ='A title is required <br />';
     } else{
